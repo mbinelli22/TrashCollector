@@ -3,10 +3,41 @@ namespace TrashCollector.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Customers",
+                c => new
+                    {
+                        CustomerID = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(),
+                        LastName = c.String(),
+                        UserName = c.String(),
+                        Password = c.String(),
+                        Address = c.String(),
+                        ZipCode = c.String(),
+                        PickUpDay = c.String(),
+                        PricePerPickUp = c.String(),
+                        DateSignedUp = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.CustomerID);
+            
+            CreateTable(
+                "dbo.TrashCollectorWorkers",
+                c => new
+                    {
+                        WorkerID = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(),
+                        LastName = c.String(),
+                        UserName = c.String(),
+                        Password = c.String(),
+                        RouteZipCode = c.String(),
+                        StartDay = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.WorkerID);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -94,6 +125,8 @@ namespace TrashCollector.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.TrashCollectorWorkers");
+            DropTable("dbo.Customers");
         }
     }
 }

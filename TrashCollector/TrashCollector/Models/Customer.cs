@@ -16,9 +16,13 @@ namespace TrashCollector.Models
         public string Password { get; set; }
         public string Address { get; set; }
         public string ZipCode { get; set; }
+        
+        //[Display(Name =aslkdfjaslkdjfaslkjf)]
         public string PickUpDay { get; set; }
         public string PricePerPickUp { get; set; }
         public DateTime DateSignedUp { get; set; }
+        //foreign key
+        //public virtual ICollection<TrashCollectorWorker> TrashCollectors { get; set; }
 
     }
 }

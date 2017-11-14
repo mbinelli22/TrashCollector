@@ -13,19 +13,19 @@
 //        // GET: Role
 //        public ActionResult Index()
 //        {
-//            //if (User.Identity.IsAuthenticated)
-//            //{
-//            //    if (!isAdminUser())
-//            //    {
-//            //        return RedirectToAction("Index", "Home");
-//            //    }
-//            //}
-//            //else
-//            //{
-//            //    return RedirectToAction("Index", "Home");
-//            //}
-//            //var Roles = context.Roles.ToList();
-//            //return View(Roles);
+//            if (User.Identity.IsAuthenticated)
+//            {
+//                if (!isAdminUser())
+//                {
+//                    return RedirectToAction("Index", "Home");
+//                }
+//            }
+//            else
+//            {
+//                return RedirectToAction("Index", "Home");
+//            }
+//            var Roles = context.Roles.ToList();
+//            return View(Roles);
 //        }
 //    }
 //}
