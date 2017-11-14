@@ -15,13 +15,6 @@ namespace TrashCollector
             CreateRolesandUsers();
         }
 
-
-        //admin
-        //worker
-        //customer
-
-
-
         private void CreateRolesandUsers()
         {
             ApplicationDbContext context = new ApplicationDbContext();
