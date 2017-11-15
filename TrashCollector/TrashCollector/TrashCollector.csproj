@@ -196,9 +196,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\TrashCollectorWorkersController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,6 +208,14 @@
     <Compile Include="Migrations\201711142102544_initial.cs" />
     <Compile Include="Migrations\201711142102544_initial.Designer.cs">
       <DependentUpon>201711142102544_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711151624357_second.cs" />
+    <Compile Include="Migrations\201711151624357_second.Designer.cs">
+      <DependentUpon>201711151624357_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711151732343_check.cs" />
+    <Compile Include="Migrations\201711151732343_check.Designer.cs">
+      <DependentUpon>201711151732343_check.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -281,6 +291,16 @@
     <Content Include="Views\Role\Index.cshtml" />
     <Content Include="Views\Home\Calendar.cshtml" />
     <Content Include="Views\Home\PayPal.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\Create.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\Delete.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\Details.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\Edit.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\Index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,6 +316,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711142102544_initial.resx">
       <DependentUpon>201711142102544_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711151624357_second.resx">
+      <DependentUpon>201711151624357_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711151732343_check.resx">
+      <DependentUpon>201711151732343_check.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
