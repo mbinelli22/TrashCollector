@@ -19,6 +19,38 @@
                 </button>
                 @Html.ActionLink("Trash Collector", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+
+           @if (Model.UserRole == "Employee")
+           {
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Calendar", "Calendar", "Home")</li>
+                    <li>@Html.ActionLink("Google Maps", "GoogleMaps", "Home")</li>
+                    
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+           }
+
+           else if (Model.UserRole == "Customer")
+           {
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Calendar", "Calendar", "Home")</li>
+                    
+                    <li>@Html.ActionLink("PayPal", "PayPal", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+           }
+           else
+           {
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -30,6 +62,10 @@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
+           }
+
+
+
         </div>
     </div>
     <div class="container body-content">

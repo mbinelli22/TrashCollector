@@ -171,7 +171,11 @@ namespace TrashCollector.Controllers
 
                     if (model.UserRoles == "Employee")
                     {
-                        return RedirectToAction("")
+                        return RedirectToAction("Create", "TrashCollectorWorkers");
+                    }
+                    else if(model.UserRoles == "Customer")
+                    {
+                        return RedirectToAction("Create", "Customers");
                     }
                     return RedirectToAction("Index", "Manage", "Users");
                 }
