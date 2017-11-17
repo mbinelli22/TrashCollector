@@ -12,20 +12,32 @@ namespace TrashCollector.Models
         public int WorkerID { get; set; }
 
         [Required]
-        [Display(Name = "First Name")]
+        [Display(Name = "First Name *")]
         public string FirstName { get; set; }
 
         [Required]
-        [Display(Name ="Last Name")]
+        [Display(Name ="Last Name *")]
         public string LastName { get; set; }
 
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        [Required]
+        [Display(Name = "User Name *")]
+        public string UserName { get; set; }    
 
+        [Required]
+        [Display(Name ="Email *")]
+        public string Email { get; set; }   
+
+        [Required]
+        [Display(Name ="Password *")]
         public string Password { get; set; }
 
-        [Display(Name ="Route Zip Code")]
+        [Required]
+        [Display(Name ="Route Zip Code *")]
         public string RouteZipCode { get; set; }
+
+        [Required]
+        [Display(Name = "Price Per Pickup *")]
+        public string PricePerPickUp { get; set; }
 
         public DateTime StartDay { get; set; }
 

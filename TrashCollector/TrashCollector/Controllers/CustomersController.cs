@@ -46,10 +46,14 @@ namespace TrashCollector.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CustomerID,FirstName,LastName,UserName,Password,Address,ZipCode,PickUpDay,PricePerPickUp,DateSignedUp")] Customer customer)
+        public ActionResult Create([Bind(Include = "CustomerID,FirstName,LastName,UserName,Password,Address,ZipCode,PickUpDay,DateSignedUp")] Customer customer)
         {
             if (ModelState.IsValid)
             {
+                //customer.UserName = User.Identity.Name(customer.UserName);
+                //customer.Password = User.Identity.Name(customer.Password);
+                //customer.Email = User.Identity.Name(customer.Email);
+                customer.PricePerPickUp = "15";
                 db.customers.Add(customer);
                 db.SaveChanges();
                 return RedirectToAction("Index");

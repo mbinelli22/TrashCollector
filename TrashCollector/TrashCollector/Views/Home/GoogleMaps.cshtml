@@ -1,11 +1,10 @@
 ﻿@{
     ViewBag.Title = "Google Maps";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>@ViewBag.Title</h2>
 
-<!DOCTYPE html>
-<html>
+
+
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -14,8 +13,8 @@
          /* Always set the map height explicitly to define the size of the div
         * element that contains the map. */
          #map {
-             height:400px ;
-             width: 400px;
+             height:500px ;
+             width: 500px;
          }
          
 
@@ -40,7 +39,7 @@
          }
     </style>
 </head>
-<body>
+
     <div id="floating-panel">
         <b>Start: </b>
         <select id="start">
@@ -147,5 +146,3 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4eQ4ZEjVd5HzAacToP5qPNNFdaqiMoRY&callback=initMap">
     </script>
-</body>
-</html>

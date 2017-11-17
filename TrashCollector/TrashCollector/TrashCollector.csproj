@@ -221,6 +221,22 @@
     <Compile Include="Migrations\201711151935003_jonsnow.Designer.cs">
       <DependentUpon>201711151935003_jonsnow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711171723329_LoginInfo.cs" />
+    <Compile Include="Migrations\201711171723329_LoginInfo.Designer.cs">
+      <DependentUpon>201711171723329_LoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171732555_deleteLoginInfo.cs" />
+    <Compile Include="Migrations\201711171732555_deleteLoginInfo.Designer.cs">
+      <DependentUpon>201711171732555_deleteLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171747136_edit.cs" />
+    <Compile Include="Migrations\201711171747136_edit.Designer.cs">
+      <DependentUpon>201711171747136_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711171751324_pptpu.cs" />
+    <Compile Include="Migrations\201711171751324_pptpu.Designer.cs">
+      <DependentUpon>201711171751324_pptpu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -329,6 +345,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711151935003_jonsnow.resx">
       <DependentUpon>201711151935003_jonsnow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171723329_LoginInfo.resx">
+      <DependentUpon>201711171723329_LoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171732555_deleteLoginInfo.resx">
+      <DependentUpon>201711171732555_deleteLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171747136_edit.resx">
+      <DependentUpon>201711171747136_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711171751324_pptpu.resx">
+      <DependentUpon>201711171751324_pptpu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
