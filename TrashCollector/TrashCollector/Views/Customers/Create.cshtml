@@ -1,7 +1,7 @@
 ﻿@model TrashCollector.Models.Customer
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit My Profile";
 }
 
 <h2>Create</h2>
@@ -30,21 +30,21 @@
             </div>
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -90,6 +90,11 @@
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Go To Customer Home Page</h2>
+            <p>Home page for customers where you can view and edit your info.</p>
+            <p><a class="btn btn-default" href="http://localhost:33938/Customers/CustomerHome">Customer Home &raquo;</a></p>
         </div>
     </div>
 }

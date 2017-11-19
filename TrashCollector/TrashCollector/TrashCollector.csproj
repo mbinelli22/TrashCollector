@@ -237,6 +237,14 @@
     <Compile Include="Migrations\201711171751324_pptpu.Designer.cs">
       <DependentUpon>201711171751324_pptpu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711182148386_priceperpickup int.cs" />
+    <Compile Include="Migrations\201711182148386_priceperpickup int.Designer.cs">
+      <DependentUpon>201711182148386_priceperpickup int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711190103544_name.cs" />
+    <Compile Include="Migrations\201711190103544_name.Designer.cs">
+      <DependentUpon>201711190103544_name.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -306,10 +314,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\GoogleMaps.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\Role\Index.cshtml" />
-    <Content Include="Views\Home\Calendar.cshtml" />
+    <Content Include="Role\Index.cshtml" />
     <Content Include="Views\Home\PayPal.cshtml" />
     <Content Include="Views\TrashCollectorWorkers\Create.cshtml" />
     <Content Include="Views\TrashCollectorWorkers\Delete.cshtml" />
@@ -321,6 +327,9 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\GoogleMaps.cshtml" />
+    <Content Include="Views\Customers\CustomerHome.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\EmployeeHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -357,6 +366,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711171751324_pptpu.resx">
       <DependentUpon>201711171751324_pptpu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711182148386_priceperpickup int.resx">
+      <DependentUpon>201711182148386_priceperpickup int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711190103544_name.resx">
+      <DependentUpon>201711190103544_name.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

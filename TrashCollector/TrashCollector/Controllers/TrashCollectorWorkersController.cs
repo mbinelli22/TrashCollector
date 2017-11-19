@@ -14,10 +14,12 @@ namespace TrashCollector.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+
         // GET: TrashCollectorWorkers
         public ActionResult Index()
         {
             return View(db.employees.ToList());
+           
         }
 
         // GET: TrashCollectorWorkers/Details/5
@@ -122,6 +124,11 @@ namespace TrashCollector.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public ActionResult EmployeeHome()
+        {
+            return View();
         }
     }
 }

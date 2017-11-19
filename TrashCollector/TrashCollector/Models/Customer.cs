@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -36,11 +37,12 @@ namespace TrashCollector.Models
         public string Address { get; set; }
 
         [Required]
+        //[ForeignKey("ZipCode")]
         [Display(Name ="Zip Code *")]
         public string ZipCode { get; set; }
         
         [Display(Name ="Price Per Trash Pick Up")]
-        public string PricePerPickUp { get; set; }
+        public int PricePerPickUp { get; set; }
 
         [Required]
         [Display(Name = "Pick Up Day *")]
@@ -50,6 +52,7 @@ namespace TrashCollector.Models
         public DateTime DateSignedUp { get; set; }
         //foreign key
         //public virtual ICollection<TrashCollectorWorker> TrashCollectors { get; set; }
+        
 
     }
 }

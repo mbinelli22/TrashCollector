@@ -32,36 +32,21 @@ namespace TrashCollector.Controllers
             return View();
         }
 
-        public ActionResult Calendar()
+        public ActionResult Customer()
         {
-            ViewBag.Message = "Your Calendar";
-            
-            return View();
-        }
-
-        //get
-        public ActionResult GoogleMaps()
-        {
-            ViewBag.Message = "Google Maps";
+            ViewBag.Message = "Customer Page";
 
             return View();
+
         }
 
-        //post
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult GoogleMaps([Bind(Include = "CustomerID,FirstName,LastName,Address,ZipCode,PickUpDay")] Customer customer)
+        public ActionResult Employee()
         {
-            if (ModelState.IsValid)
-            {
-                var currentUser = User.Identity.Name;
-                //customer.ZipCode = User.Identity.Name(customer.ZipCode);
-                //var customerAddress = context.customers.Where(a => a.Address = )
+            ViewBag.Message = "Employee Page";
 
-            }
             return View();
+                
         }
-
 
 
         public ActionResult PayPal()
