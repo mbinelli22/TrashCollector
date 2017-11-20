@@ -330,6 +330,7 @@
     <Content Include="Views\TrashCollectorWorkers\GoogleMaps.cshtml" />
     <Content Include="Views\Customers\CustomerHome.cshtml" />
     <Content Include="Views\TrashCollectorWorkers\EmployeeHome.cshtml" />
+    <Content Include="Views\TrashCollectorWorkers\FindZipCode.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

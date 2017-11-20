@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "FindZipCode";
+}
+
+<h2>FindZipCode</h2>
+@Html.ActionLink("Add Player", "Create", "Players")
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Zip Codes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(Customer.Zipcode, "Details", "Players", new { id = player.Id }, null)</td>
+                <td>@Html.ActionLink("Delete", "Delete", "Players", new { id = player.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
